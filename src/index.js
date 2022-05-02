@@ -2,7 +2,11 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-mongodb+srv://zja27:abcd1234@cluster0.crhbr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+const mongoose = require('mongoose')
+mongoose.connect('mongodb+srv://zja27:abcd1234@cluster0.crhbr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+    useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
+})
+
 
 
 app.get('/', (req, res) => {
