@@ -7,7 +7,6 @@ import Posting from '../page/Posting'
 
 // style
 import '../css/layout.css';
-import '../css/app.css'
 
 //icon
 import {MenuOutlined,LeftOutlined} from '@ant-design/icons';

@@ -22,7 +22,7 @@
 
 .main {
   width: 100%;
-    background: gray;
+    background: white;
   }
   
   .sidenav {
@@ -33,12 +33,13 @@
   }
   
   .open {
-    background: #d8dcd6;
+    background: white;
     width: 240px;
   }
 
   .navtogglebBtn {
-    padding: 10px;
+    padding: 30px;
+    font-size: larger;
   }
   
   .navtogglebBtn:hover {

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import {MenuData} from './MenuData';
 
-
+//style
+import '../css/navigation.css'
 
 function Navigation(props) {
 
