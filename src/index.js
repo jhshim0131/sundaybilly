@@ -3,7 +3,8 @@ const app = express()
 const port = 5000
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const { User } = require("./models/User");
+const { User } = require('./models/User');
+const { auth } = require('./middleware/auth');
 
 const config = require('./config/key')
 
@@ -69,6 +70,22 @@ app.post('/api/users/login', (req, res) => {
         });
     });
 });
+
+//role 1 admin             role 2 특정 부서 어드민
+//role 0 일반 유저           0 아니면 관리자
+app.get('/api/users/auth', auth, (req, res) => {
+
+    res.status(200).json({
+        _id: req.user._id,
+        isAdmin: req.user.role === 0 ? false : true,
+        isAuth: true,
+        email: req.user.email,
+        name: req.user.name,
+        lastname: req.user.lastname,
+        role: req.user.role,
+        image: req.user.image
+    })
+})
 
 
 app.listen(port, () => {
