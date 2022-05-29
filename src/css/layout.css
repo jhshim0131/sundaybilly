@@ -1,0 +1,49 @@
+
+/* Layout */
+/* header 고정 추가 */
+.header,
+.footer {
+  display: flex;
+  background: white;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.containderPage {
+  display: flex;
+  flex: 1;
+}
+
+.header-title {
+    margin: auto;
+  }
+
+.main {
+  width: 100%;
+   /*  background: white; */
+    background: floralwhite;
+  }
+  
+  .sidenav {
+    background: #d8dcd6;
+    width: 0px;
+    /* 사이드 메뉴 슬라이드 효과 */
+    transition: width 0.7s; 
+  }
+  
+  .open {
+    background: white;
+    width: 240px;
+  }
+
+  .navtogglebBtn {
+    padding: 30px;
+    font-size: larger;
+  }
+  
+  .navtogglebBtn:hover {
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* auto로 변경 예정 */
+  min-height: 100vh; 
+  color: #000133;
+}

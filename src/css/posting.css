@@ -1,0 +1,25 @@
+.dateWrite { 
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.span_date {
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.input_date{
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.icon:hover {
+    background-color: skyblue;
+    transform: scale(1.4);
+    cursor: -webkit-grab; cursor: grab;
+}
