@@ -1,0 +1,48 @@
+
+.layout{
+  background: #fff;
+}
+.trigger {
+  padding: 0 24px;
+  margin-top: 24px;
+  display: flex;
+  font-size: 18px;
+  line-height: 64px;
+  color: red;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.profile {
+  height: 150px;
+  margin: 16px;
+  background: rgba(224, 131, 131, 0.3);
+}
+
+.profile_Name {
+  align-items: center;
+  padding-top: 55px;
+}
+
+.btn_profile{
+  background-color: #fff;
+  border: 1px solid rgb(224, 156, 255);
+  border-radius: 16px;
+  color : rgb(224, 156, 255) ;
+  font-size: 13px;
+  height: 32px;
+  margin-top: 13px;
+  width: 100px;
+  vertical-align: baseline;
+  margin-left: 0px;
+}
+
+
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
