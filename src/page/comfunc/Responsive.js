@@ -17,7 +17,11 @@ margin: 0 auto;
 
 function Responsive({children,...rest}) {
     return (
+<<<<<<< HEAD
         <ResBlock {...rest}> {children}</ResBlock>
+=======
+        <ResBlock {...rest}>{children}</ResBlock>
+>>>>>>> origin/post/slide
 
         );
 }

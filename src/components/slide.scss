@@ -1,0 +1,223 @@
+:root{
+    --height: 80vmin;
+    --width: 800px;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    overflow: auto;
+   // background: linear-gradient(to top, #209cff 0%, #68e0cf 100%) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hidden{
+    transition: all 200ms ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+/*   #view_list_button {
+    position: absolute;
+    margin-left: 50.5%;
+    margin-top: -40px;
+    margin-right: 10px;
+} */
+
+#btnAtt {
+  visibility: hidden;
+ 
+}
+.button { 
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 105px;
+  margin-left: 75px;
+
+}
+  
+  .carousel{
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+  
+    .btn{
+      position: absolute;
+      height: calc(100% - 15%);
+      width: calc(100% - 90%);
+      margin: 35px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 400ms ease;
+      overflow: hidden;
+  
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 300ms ease;
+      }
+  
+      & .fas {
+        font-size: 1.6rem;
+        color: #000;
+        transition: all 400ms ease;
+        opacity: 0;
+      }
+  
+      &-back{
+        top: 0;
+        left: 0px;
+  
+        &:before{
+          border-radius: 100% 0 0 100%;
+          transform: translateX(100px);
+        }
+        & .fa-arrow-left {
+          transform: translateX(100px);
+        }
+      }
+  
+      &-next{
+        top: 0;
+        right: 0px;
+  
+        &:before{
+          border-radius: 0 100% 100% 0;
+          transform: translate(-100px);
+        }
+        & .fa-arrow-right {
+          transform: translateX(-100px);
+        }
+      }
+  
+      .right-indicator, .left-indicator{
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.9);
+      }
+      .right-indicator{ transform: translateX(-20px) }
+      .left-indicator{ transform: translateX(-5px) }
+  
+      &:hover{
+        &:before{
+          border-radius: 0;
+          background: rgba(255, 255, 255, 0.6);
+          transform: translateX(0);
+        }
+        .fa-arrow-left, .fa-arrow-right{  opacity: 1 }
+        .fa-arrow-left{ transform: translateX(8px) }
+        .fa-arrow-right{ transform: translateX(8px) }
+        .right-indicator{
+          transform: translateX(100px);
+          opacity: 0;
+        }
+        .left-indicator{
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+      }
+    }
+    
+    .viewbox{
+      width: calc(100% - 20%);
+      height: calc(100% - 10%);
+      position: relative;
+      margin: 25px auto;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.2), 2px 5px 10px rgba(0,0,0,0.1), -2px 8px 10px rgba(0,0,0,0.1);
+      z-index: 2;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.6);
+      
+/*     .track{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: all 500ms ease;
+      z-index: 2; 
+}*/
+        
+.track{
+  width: 100%; 
+ /* width : 9999999px; */
+  height: 100%;
+  position: relative;
+  transition: all 500ms ease;
+  z-index: 2;
+
+
+        .slide{
+         width: 100%; 
+          height: 100%; 
+      /*     width: 640px; 
+          height: 570px; */
+          /* float: left; */
+         /*  margin-left: 15px; */
+          position: absolute;
+         /*   transform: scale(1.09); */
+           
+         
+          .preview{
+           width: 100%; 
+          height: 100%;
+   /*          object-fit: cover; */
+/*             float: left; */
+          } 
+        }
+
+        }
+      }
+
+
+      .nav-indicator{
+        position: absolute;
+        /* bottom: -2vh; */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        
+        .dot{
+          margin: 0 5px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: rgba(222, 213, 213, 0.6);
+          cursor: pointer;
+          transition: all 300ms ease;
+          &.active{
+            background: rgba(0,0,0,0.5)
+          }
+        }
+      }
+    
+
+.xbtn{
+ width: 25px; 
+ height: 25px;
+ border:1px solid red;
+ font-weight: bolder;
+ line-height: normal;
+ position: absolute;
+ left : 0px !important
+}
+
+.x-button{
+  margin-left: 79px;
+  position: absolute;
+  z-index: 5;
+}
+
+
+    }     
+ 

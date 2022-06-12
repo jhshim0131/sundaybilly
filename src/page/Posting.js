@@ -213,5 +213,6 @@ function getDay(day) {
   let dayresult = daylist[day];
   console.log("dayresult : " + dayresult);
   return dayresult;
+
 }
 export default Posting;
