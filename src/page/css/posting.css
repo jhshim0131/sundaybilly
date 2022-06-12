@@ -1,0 +1,51 @@
+.dateWrite { 
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+}
+
+.span_date {
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.input_date{
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.icon:hover {
+    background-color: skyblue;
+    transform: scale(1.4);
+    cursor: -webkit-grab; cursor: grab;
+}
+
+.btn_profile{
+    background-color: #fff;
+    border: 1px solid rgb(224, 156, 255);
+    border-radius: 16px;
+    color : rgb(224, 156, 255) ;
+    font-size: 13px;
+    height: 32px;
+    margin-top: 13px;
+    width: 100px;
+    vertical-align: baseline;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  .writeSave_Btn{
+    float: right;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  .unsabeWrite {
+    pointer-events: none;
+    /* opacity: 0.4; */
+}
+  
